@@ -20,4 +20,6 @@ timeline. After 1800, during the Russian Empire, it was called St. Petersburg. B
 
 I should verify if there's another name. Oh right, the city was called "Kremlin," a term from the Russian word for the city. But that might be from the 19th century. So, the answer might be 
 
+Before 1990, St. Petersburg was known as Leningrad . This name was adopted in 1924, shortly after the death of Vladimir Lenin, the leader of the Bolshevik Revolution. Prior to that, the city had been renamed Petrograd in 1914 (during World War I, to remove the German-sounding "Petersburg") and retained that name until 1924.
 
+The original name, St. Petersburg , was restored in 1991 following a public referendum after the dissolution of the Soviet Union. Thus, during the Soviet period up until 1990, the city was officially called Leningrad .
