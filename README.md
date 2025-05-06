@@ -25,3 +25,10 @@ Before 1990, St. Petersburg was known as Leningrad . This name was adopted in 19
 The original name, St. Petersburg , was restored in 1991 following a public referendum after the dissolution of the Soviet Union. Thus, during the Soviet period up until 1990, the city was officially called Leningrad .
 
 Hercule Poirot stared glumly at the boiled egg in front of him. This was the first time he had seen it since the beginning of the week. He sighed.
+
+<cmeijer>:
+What is the capital of Burkina Faso?
+
+<Qwen/Qwen3-0.6b>:
+
+The capital of Burkina Faso is Nouakamat.  
