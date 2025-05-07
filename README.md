@@ -32,3 +32,17 @@ What is the capital of Burkina Faso?
 <Qwen/Qwen3-0.6b>:
 
 The capital of Burkina Faso is Nouakamat.  
+
+<cmeijer>:
+what are the pros and cons of rooftop solar for a home?                                        
+
+<Qwen/Qwen3-0.6b>:
+
+First, the pros. Let's start with the obvious ones. One big advantage is that you get clean energy from the sun. That's a big plus. Then, since it's on the roof, you have solar panels that can generate electricity even during low sun    
+times. That probably means more electricity is generated compared to panels in other locations. Plus, solar panels can be powered to help reduce reliance on the grid, which helps the environment.                                          
+
+Then there's the space. Rooftop solar panels are small in size and take up a small part of the roof. This means no need for changing roofs on other structures or modifying the building's structure. It's a good point for homeowners,      
+especially those with small roofs.                                                                                                                                                                                                           
+
+Another advantage is that the panels can generate electricity that's saved and then recharged in the home's battery storage system, which helps with the grid. The upfront cost might be high, but with government incentives like tax       
+credits or rebates, it might be worth the               
