@@ -3,7 +3,7 @@ On 28 April 2025, Alibaba Cloud launched the Qwen3 familty of large language mod
 
 This repository provides instructions for using the Hugging Face transformer library and CLI to run the Qwen3-0.6B model on a Raspberry Pi with Python and the Anaconda package manager.
 
-**Spoiler alerts**: This is pretty pointless; the small model hallucinates very badly.
+**Spoiler alert**: This is pretty pointless; the small model hallucinates very badly.
 
 ## Prerequisites:
 * A Raspberry Pi4/5 with at least 4GB of RAM
