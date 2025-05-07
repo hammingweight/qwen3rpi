@@ -5,7 +5,7 @@ On 28 April 2025, Alibaba Cloud launched the Qwen3 familty of large language mod
 
 This repository provides instructions for using the Hugging Face transformer library and CLI to run the Qwen3-0.6B model on a Raspberry Pi with Python and the Anaconda package manager.
 
-**Spoiler alert**: This is pretty pointless; the small model hallucinates very badly.
+**Spoiler alert**: This is pretty pointless - the small model hallucinates very badly.
 
 ## Prerequisites:
 * A Raspberry Pi4/5 with at least 4GB of RAM
@@ -55,44 +55,34 @@ Asking Qwen3-0.6B a basic geographical question is successful
 ```
 <carl>:
 What is the capital of France?
-
 <Qwen/Qwen3-0.6b>:
-
-France is a country located in Europe. The capital of France is usually referred to as Paris. I should confirm that this is correct. I know that Paris has a long-standing role as the administrative and cultural center of France. The     
-capital is also a prime example of the city's importance in the country's history and politics.                                                                                                                                              
-
-
-But wait, are there any other cities that might also be considered the capital? I think no, because there's no other city that holds the same status. The capital of France is Paris. So, the answer should be Paris. Let me make sure I'm   
-not mixing up any other cities. Yes, I think that's right. The capital is definitely Paris.                                                                                                                                                  
-                                                                                                                                                                                                                                             
-
 The capital of France is Paris.                                                                                                                                                                                                              
 ```
 
-However it doesn't take much to get Qwen3-0.6B to hallucinate
+However, it doesn't take much to get Qwen3-0.6B to hallucinate
 
 ```
 <carl>:
 What is the capital of Burkina Faso?
 <Qwen/Qwen3-0.6b>:
 The capital of Burkina Faso is Nkonville.
+
 <carl>:
 Where is Ouagadougou?
 <Qwen/Qwen3-0.6b>:
 Ouagadougou is the capital of Burkina Faso.                                                                                                                                                                                                  
-<carl>:
-What is the capital of Burkina Faso?
-<Qwen/Qwen3-0.6b>:
-The capital of Burkina Faso is Ouagadougou.  
 ```
 There is no place, anywhere, called "Nkonville".
 
-Other "facts" that I learnt are that St Petersburg was previously called "Kremlin" and "Königsberg" (no, that's Kaliningrad); Agatha Christie's fictional detective Hercule Poirot was British not Belgian and Christie's famous whodunnit "The Murder of Roger Ackroyd" was actually written by Charles Dickens in 1845.
+Other "facts" that I learnt are
+ * St Petersburg was previously called "Kremlin" and "Königsberg" (no, that's Kaliningrad),
+ * Agatha Christie's fictional detective Hercule Poirot was British not Belgian andm
+ * Christie's famous whodunnit "The Murder of Roger Ackroyd" was actually written by Charles Dickens in 1845.
 
 Clearly, 600 million parameters isn't enough to store much general knowledge.
 
 ## Generating Text
-Since Qwen3-0.6B hallucinates, maybe it will produce passable fiction. Let's prompt it with the start of a detective novel ("Hercule Poirot stared glumly at the boiled egg in front of him. This was...")
+Since Qwen3-0.6B hallucinates, maybe it will produce passable fiction. Let's prompt it with the start of a detective novel: "Hercule Poirot stared glumly at the boiled egg in front of him. This was..."
 
 ```
 $ ipython
@@ -104,10 +94,8 @@ Tip: You can use LaTeX or Unicode completion, `\alpha<tab>` will insert the α s
 In [1]: from transformers import pipeline
 
 In [2]: generator = pipeline("text-generation", model="Qwen/Qwen3-0.6B")
-Device set to use cpu
 
 In [3]: generator("Hercule Poirot stared glumly at the boiled egg in front of him. This was", max_length=40)
-Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
 Out[3]: [{'generated_text': "Hercule Poirot stared glumly at the boiled egg in front of him. This was the third time he'd seen it since the beginning of the story. He had been told that"}]
 
 ```
