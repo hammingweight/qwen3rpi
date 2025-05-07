@@ -76,7 +76,7 @@ There is no place, anywhere, called "Nkonville".
 
 Other "facts" that I learnt are
  * St Petersburg was previously called "Kremlin" and "Königsberg" (no, that's Kaliningrad),
- * Agatha Christie's fictional detective Hercule Poirot was British not Belgian andm
+ * Agatha Christie's fictional detective Hercule Poirot was British not Belgian and,
  * Christie's famous whodunnit "The Murder of Roger Ackroyd" was actually written by Charles Dickens in 1845.
 
 Clearly, 600 million parameters isn't enough to store much general knowledge.
@@ -103,4 +103,4 @@ Out[3]: [{'generated_text': "Hercule Poirot stared glumly at the boiled egg in f
 The words "Hercule Poirot stared glumly at the boiled egg in front of him. This was the third time he'd seen it since the beginning of the story." do not have the makings of a Golden Dagger award winner.
 
 ## Conclusion
-You can run Qwen3-0.6B on a Raspberry Pi and the computational performance is not bad; 3.7 tokens/second is not fast but it isn't painfully slow either. However 600 million parameters is insufficient for a *general-purpose* LLM but LLMs tailored for classification or chat tasks might run quite happily on low-end devices. 
+You can run Qwen3-0.6B on a Raspberry Pi and the computational performance is not bad; 3.7 tokens/second is not fast but it isn't painfully slow either. However, 600 million parameters is insufficient for a *general-purpose* LLM.  The model does return coherent sentences and LLMs tailored for classification or chat tasks might run quite happily on low-end devices. 
