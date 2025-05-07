@@ -89,3 +89,28 @@ Other "facts" that I learnt are that St Petersburg was previously called "Kremli
 
 Clearly, 600 million parameters isn't enough to store much general knowledge.
 
+## Generating Text
+Since Qwen3-0.6B hallucinates, maybe it will produce passable fiction. Let's prompt it with the start of a detective novel ("Hercule Poirot stared glumly at the boiled egg in front of him. This was...")
+
+```
+$ ipython
+Python 3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:48:18) [GCC 11.2.0]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 9.1.0 -- An enhanced Interactive Python. Type '?' for help.
+Tip: You can use LaTeX or Unicode completion, `\alpha<tab>` will insert the α symbol.
+
+In [1]: from transformers import pipeline
+
+In [2]: generator = pipeline("text-generation", model="Qwen/Qwen3-0.6B")
+Device set to use cpu
+
+In [3]: generator("Hercule Poirot stared glumly at the boiled egg in front of him. This was", max_length=40)
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+Out[3]: [{'generated_text': "Hercule Poirot stared glumly at the boiled egg in front of him. This was the third time he'd seen it since the beginning of the story. He had been told that"}]
+
+```
+
+The words "Hercule Poirot stared glumly at the boiled egg in front of him. This was the third time he'd seen it since the beginning of the story." do not have the makings of a Golden Dagger award winner.
+
+## Conclusion
+You can run Qwen3-0.6B on a Raspberry Pi and the computational performance is not bad; 3.7 tokens/second is not fast but it isn't painfully slow either. However 600 million parameters is insufficient for a *general-purpose* LLM but LLMs tailored for classification or chat tasks might run quite happily on low-end devices. 
