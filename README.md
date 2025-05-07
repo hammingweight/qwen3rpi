@@ -102,5 +102,8 @@ Out[3]: [{'generated_text': "Hercule Poirot stared glumly at the boiled egg in f
 
 The words "Hercule Poirot stared glumly at the boiled egg in front of him. This was the third time he'd seen it since the beginning of the story." do not have the makings of a Golden Dagger award winner.
 
+## What about the Qwen-1.7B model?
+This model is much better than the 0.6B model (it doesn't hallucinate nearly as badly) and consumes 47% of the available RAM on a Raspberry Pi5 with 8GB of RAM. Token generation is about 1.7 tokens/second so it's quite a bit slower though.
+
 ## Conclusion
 You can run Qwen3-0.6B on a Raspberry Pi and the computational performance is not bad; 3.7 tokens/second is not fast but it isn't painfully slow either. However, 600 million parameters is insufficient for a *general-purpose* LLM.  The model does return coherent sentences and LLMs tailored for classification or chat tasks might run quite happily on low-end devices. 
