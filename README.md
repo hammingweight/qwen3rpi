@@ -1,9 +1,9 @@
 # Qwen3-0.6B on a Raspberry Pi
 <img src="/images/rpi5.jpg" align="right" width="200px">
 
-On 28 April 2025, Alibaba Cloud launched the Qwen3 familty of large language models with eight members ranging in size from 600 million parameters (qwen3-0.6B) to 235 billion parameters (qwen3-223B-A22B). Six of the models are dense and the remaining two are sparse (the 235 billion parameter model has 22 billion active parameters). Many of the models can be run on a laptop (without a GPU) given enough RAM. You can even run the 0.6B model on a Raspberry Pi4 or Pi5 provided that you have at least 4GB of RAM.
+On 28 April 2025, Alibaba Cloud launched the Qwen3 family of large language models with eight members ranging in size from 600 million parameters (qwen3-0.6B) to 235 billion parameters (qwen3-223B-A22B). Six of the models are dense and the remaining two are sparse (the 235 billion parameter model has 22 billion active parameters). Many of the models can be run on a laptop (without a GPU) given enough RAM. You can even run the 0.6B model on a Raspberry Pi4 or Pi5 provided that you have at least 4GB of RAM.
 
-This repository provides instructions for using the Hugging Face transformer library and CLI to run the Qwen3-0.6B model on a Raspberry Pi with Python and the Anaconda package manager.
+This repository provides instructions for using the Hugging Face transformer library and CLI to run the Qwen3-0.6B model on a Raspberry Pi.
 
 **Spoiler alert**: This is pretty pointless - the small model hallucinates very badly.
 
